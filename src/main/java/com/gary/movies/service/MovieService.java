@@ -20,4 +20,12 @@ public class MovieService {
     public Optional<Movie> getMovieById(ObjectId id) {
         return movieRepository.findById(id);
     }
+
+    public Optional<Movie> getMovieByImdbId(String imdbId) {
+        return movieRepository.findMovieByImdbId(imdbId);
+    }
+
+    public Optional<Movie> getMovieByTitle(String title) {
+        return movieRepository.findMovieByTitle(title);
+    }
 }

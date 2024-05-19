@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Layout from './components/Layout';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
+import NotFound from './components/notFound/NotFound';
 
 function App() {
 
@@ -41,8 +42,8 @@ function App() {
     <div className="App">
         <Routes>
             <Route path="/" element={<Layout/>}>
-                <Route path="/" element={<Home/>}></Route>
-
+                <Route path="/" element={<Home movies={movies} />}></Route>
+                <Route path="*" element={<NotFound/>}></Route>
             </Route>
         </Routes>
     </div>

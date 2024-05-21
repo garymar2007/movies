@@ -44,10 +44,9 @@
 		<!-- https://mvnrepository.com/artifact/me.paulschwarz/spring-dotenv -->
 		<dependency>
 			<groupId>me.paulschwarz</groupId>
-			<artifactId>spring-dotenv</artifactId>
+			<artifactId>spring-dotenv</artifactId>cd
 			<version>4.0.0</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
